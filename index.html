@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+ <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="styl.css">
+<script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + "" ;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+
+</script>
+<body onload="startTime()">
+<div class="container-fluid">
+<div class="row">
+	<div class="col-xl-3">
+	
+		<h1 class="text-center h2"><b>PRODUCTS RATES</b></h1>
+
+	</div>
+	<div class="col-xl-6">
+		<h1 class="text-center h1"><b><marquee direction="left to right"> HOT NEWS/OFFER</marquee></b></h1>
+           
+	    			
+	    		    <div class="slider-wrap">
+					    <div class="single-slide" id="slide-1" style="background-image: url(photo/slide1.jpeg);">
+					      <div class="slider-text-inner text-center animated fadeInup">
+					      
+				
+					        
+					      </div>
+					    </div>
+					    <div class="single-slide" id="slide-2" style="background-image: url(photo/slide2.jpeg);">
+					     <div class="slider-text-inner text-center"> 
+					        					       
+					      </div>
+					    </div>
+					    <div class="single-slide" id="slide-3" style="background-image: url(photo/slide3.jpeg);">
+					      <div class="slider-text-inner text-center">
+
+
+					        
+					      </div>
+					    </div>
+					    <div class="single-slide" id="slide-4" style="background-image: url(photo/slide4.jpg);">
+					      <div class="slider-text-inner text-center">
+					      </div>
+					    </div>
+					    <div class="single-slide" id="slide-5" style="background-image: url(photo/slide5.jpg);">
+					      <div class="slider-text-inner text-center">
+					      
+					        
+					      </div>
+					    </div>
+					</div>
+					<div class="row r1">
+						<div class="col-xl-4 ">
+							<img  class="img-responsive pic1" src="photo/Slide1.JPG.jpg" width="100%">
+						</div>
+						<div class="col-xl-4 ">
+							<img class="img-responsive pic1" src="photo/Slide2.JPG.jpg" width="100%">
+						</div>
+						<div class="col-xl-4 ">
+							<img class="img-responsive pic1" src="photo/Slide3.JPG.jpg" width="100%">
+						</div>
+					</div>
+					
+	</div>
+	<div class="col-xl-3 " >
+		<br>
+		<div class="row">
+			<div class="col-xl-12 border">
+			
+			     <div  class="clock">
+	              <p id="txt"></p>
+                  </div>
+			</div>
+		</div><br>
+		<div class="row">
+			<div class="col-xl-12 border">
+				<img src="photo/auto1.jpeg" width="100%">
+			</div>
+		</div>
+    <br>
+    <div class="row">
+			<div class="col-xl-12 border">
+				<img src="photo/b3.jpeg" width="100%">
+			</div>
+		</div><br>
+<div class="row">
+			<div class="col-md-12 border">
+				<img src="photo/images.jpg" width="100%">
+			</div>
+		</div>
+
+   
+</div>
+
+</body>
+</html>
