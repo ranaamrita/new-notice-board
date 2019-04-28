@@ -94,3 +94,27 @@ animation-timing-function: ease-in-out;
 {
   margin-top: 8px;
 }
+li
+{ 
+  margin-top: 10px;
+    background-color: #222f5e;
+    /* margin-right: 17px; */
+    margin-left: -43px;
+    color: white;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+li b
+{
+  margin-left: 10px;
+
+}
+.up
+{
+ height: 559px;
+    background: #5d6fb1;
+}
+li span
+{  
+  margin-right: 10px;
+}
